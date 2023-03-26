@@ -35,10 +35,4 @@ while (norm(r) > conv) && (niters < max_it)
     niters = niters + 1;
 end
 
-% Display warning if maximum iterations reached without convergence
-if niters == max_it
-    warning('Method_of_Steepest_Descent:MaxItersReached', ...
-        'Maximum number of iterations reached without convergence');
-end
-
 end
